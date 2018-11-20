@@ -18,15 +18,15 @@ void FixedUpdate()
         rb2d.AddForce(movement*speed);
     }
 
-    
     void OntriggerEnter2D(Collider2D other)
     {
         
-            if (other.gameObject.CompareTag("PickUp"))
+        if (other.gameObject.CompareTag("PickUp"))
         {
             other.gameObject.SetActive(false);
-
         }
-
+                
+       
     }
+
 }
